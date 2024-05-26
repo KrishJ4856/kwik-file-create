@@ -1,0 +1,20 @@
+{
+  "name": "kwik-file-create",
+  "version": "1.0.0",
+  "description": "This is a cli tool to create and delete many files quickly using the terminal.",
+  "exports": "./index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krish Jaiswal",
+  "license": "MIT",
+  "bin": {
+    "kfc": "index.js"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^5.0.4",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  }
+}
