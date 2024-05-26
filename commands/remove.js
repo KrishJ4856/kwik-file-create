@@ -43,7 +43,12 @@ const remove = async (path) => {
             await runCommand(command, "Deleted Successfully!") // executing the command
 
     } catch (error) {
-        console.log("Something went wrong! \n", error)
+        if(error && error.message && error.message.startsWith('User force closed the prompt')){
+            // eat 5star, do nothing
+        }
+        else{
+            console.log("Something went wrong! \n", error)
+        }
     }
 }
 
